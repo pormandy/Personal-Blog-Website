@@ -1,0 +1,153 @@
+/* Mobile First Layout */
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "hd "
+    "nv"
+    "main"
+    "ft";
+}
+header {
+  grid-area: hd;
+}
+nav {
+  grid-area: nv;
+}
+aside {
+  grid-area: aside;
+  width: 100%;
+  border-bottom: #ccc solid 1px;
+}
+aside ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0;
+}
+aside ul li {
+  padding: 10px 0;
+  font-size: 18px;
+}
+.content {
+  grid-area: content;
+  position: relative;
+  flex-grow: 1;
+  padding: 0 60px 40px 60px;
+}
+footer {
+  grid-area: ft;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+.avatar .icon {
+  width: 155px;
+  height: 155px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/avatar.png');
+}
+body a .fa {
+  font-size: 30px;
+  color: tomato;
+}
+body a .fa:hover {
+  opacity: 50%;
+}
+.blog-img {
+  height: 500px;
+  margin: 40px 0;
+}
+article p {
+  text-align: center;
+  padding: 0 2vw;
+}
+.blog-img-1 {
+  background-image: url('../images/two.jpg');
+}
+.blog-img-2 {
+  background-image: url('../images/three.jpg');
+}
+.blog-img-3 {
+  background-image: url('../images/four.jpg');
+}
+.blog-img-4 {
+  background-image: url('../images/five.jpg');
+}
+.blog-img-5 {
+  background-image: url('../images/six.jpg');
+}
+#author-info ul, #author-social ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+#author-social ul {
+  display: flex;
+}
+#author-social ul li, #author-info ul li {
+  padding: 10px 0;
+  margin: 0 20px 0 0;
+}
+#author-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#author-info-wrapper .twenty-pixels {
+  padding: 40px;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+}
+@media(min-width:1000px) {
+  main {
+    flex-direction: row;
+  }
+  aside {
+    grid-area: aside;
+    width: 40%;
+    padding: 40px;
+    border-right: #ccc solid 1px;
+    border-bottom: #fff solid 1px;
+  }
+  aside ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0;
+  }
+  aside ul li {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .content {
+    grid-area: content;
+    position: relative;
+    flex-grow: 1;
+    padding: 0 60px 40px 60px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "feat feat feat feat feat feat feat feat"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+}
