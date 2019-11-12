@@ -68,6 +68,8 @@ body a .fa:hover {
 .blog-img {
   height: 500px;
   margin: 40px 0;
+  background-size: cover;
+  background-position: center;
 }
 article p {
   text-align: center;
