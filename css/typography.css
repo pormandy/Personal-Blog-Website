@@ -97,3 +97,27 @@
     cursor: pointer;
     opacity: 50%;
   }
+
+  .blog-bold{
+    color: #ec9923;
+    font-weight: 700;
+  }
+
+  #blog-post p a{
+    color: tomato;
+    text-decoration: none;
+  }
+
+  #blog-post p a:hover{
+    text-decoration: underline;
+  }
+
+  #blog-post p .blog-italic{
+    color: #38b490;
+    font-style: italic;
+  }
+
+  #blog-post p .blog-under-line{
+    color: #201a0c;
+    text-decoration: underline;
+  }
